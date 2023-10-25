@@ -9,7 +9,52 @@
   <script src="./main.js" defer></script>
 </head>
 <body>
-  <p>hello</p>
-  <p>hello</p>
+  <div class="image-container"></div>
+  <div class="content-container">
+    <div class="header">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+      <p>sign up <i>now</i> to get started.</p>
+      <p class="tagline">You <i>know</i> you want to.</p>
+    </div>
+    <div class="form-container">
+      <p>Let's do this!</p>
+      <form action="" method="post" id="a-form">
+        <div>
+          <label for="fname">FIRST NAME</label>
+          <input type="text" id="fname" name="fname" placeholder="John" pattern="([a-z]|[A-Z])+" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="lname">LAST NAME</label>
+          <input type="text" id="lname" name="lname" placeholder="Doe" pattern="([a-z]|[A-Z])+" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" placeholder="abc@mail.com" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="(\D*\d){10}" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="pass1">PASSWORD [6-20 characters]</label>
+          <input type="password" id="pass1" name="pass1" placeholder="******" minlength="6" maxlength="20" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="pass2">CONFIRM PASSWORD</label>
+          <input type="password" id="pass2" name="pass2" placeholder="******" minlength="6" maxlength="20" required>
+          <span></span>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <button type="submit" form="a-form">Create Account</button>
+      <p>Already have an account? <a href="#"><strong>Log in</strong></a></p>
+    </div>
+  </div>
 </body>
 </html>
